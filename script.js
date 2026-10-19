@@ -1,5 +1,5 @@
 /* ==========================================================
-   GABARITO — Amigo Fiel (v2)
+   GABARITO — Amigo Fiel: script.js
    Estrutura do script:
    1) Configuração (preços, valida data mínima)
    2) Funções auxiliares de validação (uma por regra da Parte 2)
@@ -7,10 +7,6 @@
    4) Função de exibição do resultado (Parte 4)
    5) Histórico via manipulação do DOM (Parte 5)
    6) Listener do submit, orquestrando tudo
-
-   Mudanças desde a v1: entregue como arquivo separado (antes estava
-   embutido no HTML); a Parte 5 não exige mais botão de remover no
-   histórico — só criar e inserir os itens com createElement/appendChild.
    ========================================================== */
 
 // ---------- 1) Configuração ----------
@@ -250,7 +246,6 @@ function mostrarErroGeral() {
 // ---------- 5) Histórico via manipulação do DOM (Parte 5) ----------
 // Regra da prova (v2): cada item novo é criado com document.createElement
 // (NÃO pode usar innerHTML aqui) e inserido com appendChild, sem apagar
-// os anteriores. Não há mais exigência de botão de remover.
 
 const listaHistorico = document.getElementById('historico');
 const historicoVazioEl = document.getElementById('historicoVazio');
