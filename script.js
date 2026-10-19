@@ -245,7 +245,7 @@ function mostrarErroGeral() {
 
 // ---------- 5) Histórico via manipulação do DOM (Parte 5) ----------
 // Regra da prova (v2): cada item novo é criado com document.createElement
-// (NÃO pode usar innerHTML aqui) e inserido com appendChild, sem apagar
+// (NÃO pode usar innerHTML aqui) e inserido com appendChild, sem apagar os anteriores.
 
 const listaHistorico = document.getElementById('historico');
 const historicoVazioEl = document.getElementById('historicoVazio');
